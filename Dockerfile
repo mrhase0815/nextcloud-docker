@@ -1,8 +1,5 @@
 FROM nextcloud:apache
 
-RUN apt-get update && apt-get install -y smbclient && rm -rf /var/lib/apt/lists/*
-FROM nextcloud:apache
-
 RUN apt-get update && apt-get install -y \
     supervisor smbclient procps \
     libmagickcore-6.q16-6-extr \
